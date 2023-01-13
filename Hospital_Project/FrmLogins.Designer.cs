@@ -1,6 +1,6 @@
 ﻿namespace Hospital_Project
 {
-    partial class Form1
+    partial class FrmLogins
     {
         /// <summary>
         /// Required designer variable.
@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmLogins));
+            this.btnPatientLogin = new System.Windows.Forms.Button();
+            this.btnDoctorLogin = new System.Windows.Forms.Button();
+            this.btnSecretaryLogin = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -40,38 +40,41 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // btnPatientLogin
             // 
-            this.button1.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.Location = new System.Drawing.Point(11, 175);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(222, 189);
-            this.button1.TabIndex = 0;
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnPatientLogin.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.btnPatientLogin.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnPatientLogin.BackgroundImage")));
+            this.btnPatientLogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnPatientLogin.Location = new System.Drawing.Point(11, 175);
+            this.btnPatientLogin.Name = "btnPatientLogin";
+            this.btnPatientLogin.Size = new System.Drawing.Size(222, 189);
+            this.btnPatientLogin.TabIndex = 0;
+            this.btnPatientLogin.UseVisualStyleBackColor = false;
+            this.btnPatientLogin.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // btnDoctorLogin
             // 
-            this.button2.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.Location = new System.Drawing.Point(266, 175);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(222, 189);
-            this.button2.TabIndex = 1;
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnDoctorLogin.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.btnDoctorLogin.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnDoctorLogin.BackgroundImage")));
+            this.btnDoctorLogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnDoctorLogin.Location = new System.Drawing.Point(266, 175);
+            this.btnDoctorLogin.Name = "btnDoctorLogin";
+            this.btnDoctorLogin.Size = new System.Drawing.Size(222, 189);
+            this.btnDoctorLogin.TabIndex = 1;
+            this.btnDoctorLogin.UseVisualStyleBackColor = false;
+            this.btnDoctorLogin.Click += new System.EventHandler(this.btnDoctorLogin_Click);
             // 
-            // button3
+            // btnSecretaryLogin
             // 
-            this.button3.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button3.Location = new System.Drawing.Point(522, 175);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(222, 189);
-            this.button3.TabIndex = 2;
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnSecretaryLogin.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.btnSecretaryLogin.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSecretaryLogin.BackgroundImage")));
+            this.btnSecretaryLogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnSecretaryLogin.Location = new System.Drawing.Point(522, 175);
+            this.btnSecretaryLogin.Name = "btnSecretaryLogin";
+            this.btnSecretaryLogin.Size = new System.Drawing.Size(222, 189);
+            this.btnSecretaryLogin.TabIndex = 2;
+            this.btnSecretaryLogin.UseVisualStyleBackColor = false;
+            this.btnSecretaryLogin.Click += new System.EventHandler(this.btnSecretaryLogin_Click);
             // 
             // label1
             // 
@@ -120,10 +123,11 @@
             this.label4.TabIndex = 7;
             this.label4.Text = "NatureCare Hospital";
             // 
-            // Form1
+            // FrmLogins
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.LightSeaGreen;
             this.ClientSize = new System.Drawing.Size(757, 409);
             this.Controls.Add(this.label4);
@@ -131,13 +135,14 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnSecretaryLogin);
+            this.Controls.Add(this.btnDoctorLogin);
+            this.Controls.Add(this.btnPatientLogin);
             this.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
-            this.Name = "Form1";
+            this.MaximizeBox = false;
+            this.Name = "FrmLogins";
             this.Text = "NatureCare Hospital";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -147,9 +152,9 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnPatientLogin;
+        private System.Windows.Forms.Button btnDoctorLogin;
+        private System.Windows.Forms.Button btnSecretaryLogin;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;

@@ -46,16 +46,134 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="FrmAnnouncements.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="FrmAnnouncements.Designer.cs">
+      <DependentUpon>FrmAnnouncements.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAppointmentList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAppointmentList.Designer.cs">
+      <DependentUpon>FrmAppointmentList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBranch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBranch.Designer.cs">
+      <DependentUpon>FrmBranch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDoctorDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDoctorDetail.Designer.cs">
+      <DependentUpon>FrmDoctorDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDoctorEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDoctorEdit.Designer.cs">
+      <DependentUpon>FrmDoctorEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDoctorLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDoctorLogin.Designer.cs">
+      <DependentUpon>FrmDoctorLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDoctorPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDoctorPanel.Designer.cs">
+      <DependentUpon>FrmDoctorPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEditInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEditInformation.Designer.cs">
+      <DependentUpon>FrmEditInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogins.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogins.Designer.cs">
+      <DependentUpon>FrmLogins.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPatientDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPatientDetail.Designer.cs">
+      <DependentUpon>FrmPatientDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPatientLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPatientLogin.Designer.cs">
+      <DependentUpon>FrmPatientLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPatientRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPatientRegister.Designer.cs">
+      <DependentUpon>FrmPatientRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSecretaryDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSecretaryDetail.Designer.cs">
+      <DependentUpon>FrmSecretaryDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSecretaryLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSecretaryLogin.Designer.cs">
+      <DependentUpon>FrmSecretaryLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="sqlconnection.cs" />
+    <EmbeddedResource Include="FrmAnnouncements.resx">
+      <DependentUpon>FrmAnnouncements.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAppointmentList.resx">
+      <DependentUpon>FrmAppointmentList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBranch.resx">
+      <DependentUpon>FrmBranch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDoctorDetail.resx">
+      <DependentUpon>FrmDoctorDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDoctorEdit.resx">
+      <DependentUpon>FrmDoctorEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDoctorLogin.resx">
+      <DependentUpon>FrmDoctorLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDoctorPanel.resx">
+      <DependentUpon>FrmDoctorPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEditInformation.resx">
+      <DependentUpon>FrmEditInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogins.resx">
+      <DependentUpon>FrmLogins.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPatientDetail.resx">
+      <DependentUpon>FrmPatientDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPatientLogin.resx">
+      <DependentUpon>FrmPatientLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPatientRegister.resx">
+      <DependentUpon>FrmPatientRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSecretaryDetail.resx">
+      <DependentUpon>FrmSecretaryDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSecretaryLogin.resx">
+      <DependentUpon>FrmSecretaryLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
