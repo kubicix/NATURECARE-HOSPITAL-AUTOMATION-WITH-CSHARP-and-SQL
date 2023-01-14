@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmDoctorPanel));
             this.mskTc = new System.Windows.Forms.MaskedTextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -53,7 +54,7 @@
             this.mskTc.Mask = "00000000000";
             this.mskTc.Name = "mskTc";
             this.mskTc.Size = new System.Drawing.Size(120, 27);
-            this.mskTc.TabIndex = 26;
+            this.mskTc.TabIndex = 4;
             // 
             // label5
             // 
@@ -82,7 +83,7 @@
             this.cmbBranch.Location = new System.Drawing.Point(154, 75);
             this.cmbBranch.Name = "cmbBranch";
             this.cmbBranch.Size = new System.Drawing.Size(121, 27);
-            this.cmbBranch.TabIndex = 28;
+            this.cmbBranch.TabIndex = 3;
             // 
             // label7
             // 
@@ -100,7 +101,7 @@
             this.txtName.Location = new System.Drawing.Point(154, 9);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(121, 27);
-            this.txtName.TabIndex = 29;
+            this.txtName.TabIndex = 1;
             // 
             // label1
             // 
@@ -118,16 +119,16 @@
             this.txtSurname.Location = new System.Drawing.Point(154, 41);
             this.txtSurname.Name = "txtSurname";
             this.txtSurname.Size = new System.Drawing.Size(120, 27);
-            this.txtSurname.TabIndex = 31;
+            this.txtSurname.TabIndex = 2;
             // 
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
             this.checkBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.checkBox1.Location = new System.Drawing.Point(280, 140);
+            this.checkBox1.Location = new System.Drawing.Point(280, 141);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(73, 27);
-            this.checkBox1.TabIndex = 40;
+            this.checkBox1.TabIndex = 6;
             this.checkBox1.Text = "Show";
             this.checkBox1.UseVisualStyleBackColor = false;
             this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
@@ -139,7 +140,7 @@
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '●';
             this.txtPassword.Size = new System.Drawing.Size(120, 27);
-            this.txtPassword.TabIndex = 39;
+            this.txtPassword.TabIndex = 5;
             // 
             // label3
             // 
@@ -153,11 +154,13 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(359, 9);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(438, 248);
+            this.dataGridView1.Size = new System.Drawing.Size(729, 248);
             this.dataGridView1.TabIndex = 41;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // btnUpdate
             // 
@@ -165,7 +168,7 @@
             this.btnUpdate.Location = new System.Drawing.Point(154, 221);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(121, 36);
-            this.btnUpdate.TabIndex = 43;
+            this.btnUpdate.TabIndex = 9;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = false;
             // 
@@ -175,9 +178,10 @@
             this.btnAdd.Location = new System.Drawing.Point(154, 179);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(55, 36);
-            this.btnAdd.TabIndex = 42;
+            this.btnAdd.TabIndex = 7;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnDelete
             // 
@@ -185,7 +189,7 @@
             this.btnDelete.Location = new System.Drawing.Point(220, 179);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(55, 36);
-            this.btnDelete.TabIndex = 44;
+            this.btnDelete.TabIndex = 8;
             this.btnDelete.Text = "Del";
             this.btnDelete.UseVisualStyleBackColor = false;
             // 
@@ -193,8 +197,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.ClientSize = new System.Drawing.Size(809, 267);
+            this.ClientSize = new System.Drawing.Size(1100, 267);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnAdd);
@@ -211,9 +216,11 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label6);
             this.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(5);
+            this.MaximizeBox = false;
             this.Name = "FrmDoctorPanel";
-            this.Text = "FrmDoctorPanel";
+            this.Text = "Doctor Panel";
             this.Load += new System.EventHandler(this.FrmDoctorPanel_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

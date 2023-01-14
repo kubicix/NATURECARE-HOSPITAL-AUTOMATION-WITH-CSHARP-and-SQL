@@ -147,6 +147,7 @@
             this.btnCreateAnnounce.TabIndex = 1;
             this.btnCreateAnnounce.Text = "Create";
             this.btnCreateAnnounce.UseVisualStyleBackColor = false;
+            this.btnCreateAnnounce.Click += new System.EventHandler(this.btnCreateAnnounce_Click);
             // 
             // rchAnnouncement
             // 
@@ -414,6 +415,7 @@
             this.btnDoctorpanel.TabIndex = 25;
             this.btnDoctorpanel.Text = "Doctor Panel";
             this.btnDoctorpanel.UseVisualStyleBackColor = false;
+            this.btnDoctorpanel.Click += new System.EventHandler(this.btnDoctorpanel_Click);
             // 
             // FrmSecretaryDetail
             // 

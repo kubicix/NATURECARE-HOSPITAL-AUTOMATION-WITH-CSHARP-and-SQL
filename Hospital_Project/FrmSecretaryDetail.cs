@@ -101,5 +101,22 @@ namespace Hospital_Project
             }
             con.connection().Close();
         }
+
+        private void btnCreateAnnounce_Click(object sender, EventArgs e)
+        {
+            rchAnnouncement.Clear();
+            SqlCommand cmd = new SqlCommand("insert into tbl_announcements (announcement) values (@p1)", con.connection());
+            cmd.Parameters.AddWithValue("@p1",rchAnnouncement.Text);
+            cmd.ExecuteNonQuery();
+            con.connection().Close();
+            MessageBox.Show("Announcement created.");
+        }
+
+        private void btnDoctorpanel_Click(object sender, EventArgs e)
+        {
+            FrmDoctorPanel frm = new FrmDoctorPanel();
+            frm.Show();
+            this.Hide();
+        }
     }
 }
